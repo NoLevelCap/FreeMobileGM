@@ -3,6 +3,8 @@ using System.Collections;
 
 public class BHDController : MonoBehaviour {
 
+	public Animator anim;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -11,5 +13,9 @@ public class BHDController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
+	}
+
+	public void OnClick(){
+		anim.SetBool ("Present", !anim.GetBool ("Present"));
 	}
 }
